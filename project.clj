@@ -7,6 +7,7 @@
                  [ring "1.4.0"]
                  [hiccup "1.0.5"]
                  [compojure "1.4.0"]
-                 [com.novemberain/monger "3.0.0-rc2"]]
+                 [com.novemberain/monger "3.0.0-rc2"]
+                 [clj-http "2.0.0"]]
   :plugins [[lein-ring "0.9.6"]]
   :ring {:handler collabify.core/app})
