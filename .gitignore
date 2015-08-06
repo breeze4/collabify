@@ -11,3 +11,6 @@ pom.xml.asc
 .hg/
 /.idea
 collabify.iml
+/node_modules
+/resources/build
+/public
