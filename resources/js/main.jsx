@@ -1,4 +1,4 @@
-var ExampleApplication = React.createClass({
+var CollabifyApplication = React.createClass({
     render: function () {
         var elapsed = Math.round(this.props.elapsed / 100);
         var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
@@ -13,7 +13,7 @@ var start = new Date().getTime();
 
 setInterval(function () {
     React.render(
-        <ExampleApplication elapsed={new Date().getTime() - start} />,
+        <CollabifyApplication elapsed={new Date().getTime() - start} />,
         document.getElementById('container')
     );
 }, 50);

@@ -53,6 +53,10 @@ module.exports = function (grunt) {
             react: {
                 files: ['resources/js/**.jsx'],
                 tasks: ['react']
+            },
+            build: {
+                files: ['resources/build/**/*'],
+                tasks: ['copy']
             }
         }
 
