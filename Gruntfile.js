@@ -4,16 +4,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-react');
+    grunt.loadNpmTasks('grunt-babel');
 
     grunt.initConfig({
-        react: {
-            jsx: {
-                files: {
-                    'resources/build/js/app.js': ['resources/js/**/*.jsx']
-                }
-            }
-        },
-
         copy: {
             lib: {
                 files: [
@@ -64,6 +57,6 @@ module.exports = function (grunt) {
 
     // Default task(s).
     grunt.registerTask('default', ['build', 'watch']);
-    grunt.registerTask('build', ['react', 'copy']);
+    grunt.registerTask('build', ['babel', 'copy']);
 
 };
