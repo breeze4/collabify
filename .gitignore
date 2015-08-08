@@ -14,3 +14,4 @@ collabify.iml
 /node_modules
 /resources/build
 /public
+/profiles.clj

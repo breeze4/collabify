@@ -1,9 +1,9 @@
 import React from 'react';
-import Playlist from './playlist.jsx';
+import Login from './login.jsx';
 
 class CollabifyApplication extends React.Component {
     render() {
-        return (<Playlist message='hi from app'/>);
+        return (<Login />);
     }
 }
 

@@ -5,9 +5,10 @@
             :url  "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [ring "1.4.0"]
-                 [hiccup "1.0.5"]
                  [compojure "1.4.0"]
                  [com.novemberain/monger "3.0.0-rc2"]
-                 [clj-http "2.0.0"]]
-  :plugins [[lein-ring "0.9.6"]]
+                 [clj-http "2.0.0"]
+                 [environ "1.0.0"]]
+  :plugins [[lein-ring "0.9.6"]
+            [lein-environ "1.0.0"]]
   :ring {:handler collabify.core/app})
