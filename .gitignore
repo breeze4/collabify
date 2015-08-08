@@ -13,3 +13,4 @@ pom.xml.asc
 collabify.iml
 /node_modules
 /resources/build
+/public
