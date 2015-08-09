@@ -2,15 +2,23 @@
   (:require
     [clj-http.client :as http]
     [environ.core :refer [env]]
-    [ring.util.response :refer [redirect]]
+    [ring.util.response :refer [redirect header]]
     [ring.middleware.cookies :refer [wrap-cookies]]
     [ring.util.codec :refer [form-encode]]
     [clojure.data.codec.base64 :as b64]
-    [clojure.data.json :as json])
+    [clojure.data.json :as json]
+    [collabify.token :refer [save-token]])
   (import java.util.UUID))
 
 (def client-id (env :spotify-client-id))
 (def client-secret (env :spotify-secret))
+
+(defn string-to-base64-string [original]
+  (String. (b64/encode (.getBytes original "UTF-8")) "UTF-8"))
+
+(def auth-header-value (str "Basic "
+                            (string-to-base64-string
+                              (str client-id ":" client-secret))))
 
 (def redirect-url "http://localhost:3000/loginSuccess")
 (def state-mismatch-url "/state_mismatch")
@@ -18,21 +26,21 @@
 
 (def code-key "code")
 (def state-key "state")
-(def state-cookie-key :spotify_auth_state)
+(def state-cookie-key "spotify_auth_state")
 (def spotify-auth-url-base "https://accounts.spotify.com/authorize?")
 (def spotify-token-url "https://accounts.spotify.com/api/token")
+
+(def grant-authorization-code "authorization_code")
+(def grant-refresh-token "refresh_token")
 
 (def stored-state (atom {}))
 
 (defn- gen-state []
   (UUID/randomUUID))
 
-(defn string-to-base64-string [original]
-  (String. (b64/encode (.getBytes original "UTF-8")) "UTF-8"))
-
 (defn login [request]
   (let [state (.toString (gen-state))
-        cookie {state-cookie-key state}
+        cookie (str state-cookie-key "=" state)
         auth-params (form-encode {:response_type code-key
                                   :client_id     client-id
                                   :scope         scopes
@@ -41,25 +49,24 @@
         auth-url (str spotify-auth-url-base auth-params)]
     (do
       (swap! stored-state assoc :state state)
-      (redirect auth-url))))                                ;; add header to set cookie
+      (header (redirect auth-url) "Set-Cookie" cookie))))
 
-(defn- build-token-request [code]
+(defn- build-token-request [grant-type code]
   (let [body {:grant_type   "authorization_code"
               :code         code
-              :redirect_uri redirect-url}
-        auth-header (str "Basic " (string-to-base64-string (str client-id ":" client-secret)))]
-    {:form-params body
-     :headers {"Authorization" auth-header}
+              :redirect_uri redirect-url}]
+    {:form-params  body
+     :headers      {"Authorization" auth-header-value}
      :content-type :x-www-form-urlencoded
-     :accept :json}))
+     :accept       :json}))
 
 (defn- handle-token-response [response]
-  (let [body (json/read-str (:body response) :key-fn keyword)]
-    (prn body)))
+  (let [token-body (json/read-str (:body response) :key-fn keyword)]
+    (save-token token-body)))
 
-(defn- request-token [code]
+(defn- request-token [grant-type code]
   (let [url spotify-token-url
-        opts (build-token-request code)
+        opts (build-token-request grant-type code)
         response (http/post url opts)]
     (handle-token-response response)))
 
@@ -70,5 +77,10 @@
         state-matches (= (:state @stored-state) returned-state)]
     (if (not state-matches)
       (redirect state-mismatch-url)
-      (request-token code))))
+      (request-token grant-authorization-code code))))
+
+(defn refresh-token
+  "Spotify tokens expire after 1 hour. Server stores the refresh_token
+  and if the current user token has expired, it will request a new one"
+  [])
 ;;

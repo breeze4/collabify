@@ -10,7 +10,9 @@
                  [clj-http "2.0.0"]
                  [environ "1.0.0"]
                  [org.clojure/data.codec "0.1.0"]
-                 [org.clojure/data.json "0.2.6"]]
+                 [org.clojure/data.json "0.2.6"]
+                 [clj-time "0.10.0"]
+                 [cheshire "5.5.0"]]
   :plugins [[lein-ring "0.9.6"]
             [lein-environ "1.0.0"]]
   :ring {:handler collabify.core/app})
