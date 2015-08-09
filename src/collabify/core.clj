@@ -4,6 +4,7 @@
     [compojure.route :as route]
     [ring.middleware.file :refer [wrap-file]]
     [ring.middleware.params :refer [wrap-params]]
+    [ring.middleware.json :refer [wrap-json-response]]
     [ring.util.response :refer [file-response redirect]]
     [collabify.spotify :refer [login login-success]]
     ))
@@ -17,4 +18,5 @@
 (def app
   (-> app-routes
       (wrap-params)
+      (wrap-json-response)
       (wrap-file "public")))

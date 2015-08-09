@@ -2,7 +2,7 @@
   (:require
     [clj-http.client :as http]
     [environ.core :refer [env]]
-    [ring.util.response :refer [redirect header]]
+    [ring.util.response :refer [response redirect header]]
     [ring.middleware.cookies :refer [wrap-cookies]]
     [ring.util.codec :refer [form-encode]]
     [clojure.data.codec.base64 :as b64]
@@ -29,6 +29,7 @@
 (def state-cookie-key "spotify_auth_state")
 (def spotify-auth-url-base "https://accounts.spotify.com/authorize?")
 (def spotify-token-url "https://accounts.spotify.com/api/token")
+(def spotify-user-detail-url "https://api.spotify.com/v1/me")
 
 (def grant-authorization-code "authorization_code")
 (def grant-refresh-token "refresh_token")
@@ -60,24 +61,43 @@
      :content-type :x-www-form-urlencoded
      :accept       :json}))
 
+(defn- build-user-details-request
+  "TODO: refresh token if necessary"
+  [access-token refresh-token]
+  (let [
+        auth-bearer (str "Bearer " access-token)
+        auth-header {"Authorization" auth-bearer}]
+    {:headers auth-header
+     :accept  :json}))
+
+(defn- request-user-details [opts]
+  (let [url spotify-user-detail-url
+        response (http/get url opts)
+        body (json/read-str (:body response) :key-fn keyword)]
+    body))
+
 (defn- handle-token-response [response]
-  (let [token-body (json/read-str (:body response) :key-fn keyword)]
-    (save-token token-body)))
+  (let [token-body (json/read-str (:body response) :key-fn keyword)
+        request-details (build-user-details-request (:access_token token-body) (:refresh_token token-body))
+        user-details (request-user-details request-details)
+        user-id (user-details :id)]
+    (save-token user-id token-body)))
 
 (defn- request-token [grant-type code]
   (let [url spotify-token-url
         opts (build-token-request grant-type code)
-        response (http/post url opts)]
-    (handle-token-response response)))
+        token-response (http/post url opts)
+        stored-token (handle-token-response token-response)]
+    stored-token))
 
 (defn login-success [request]
   (let [query (:params request)
         code (query code-key)
         returned-state (query state-key)
         state-matches (= (:state @stored-state) returned-state)]
-    (if (not state-matches)
-      (redirect state-mismatch-url)
-      (request-token grant-authorization-code code))))
+      (if (not state-matches)
+        (redirect state-mismatch-url)
+        (response (request-token grant-authorization-code code)))))
 
 (defn refresh-token
   "Spotify tokens expire after 1 hour. Server stores the refresh_token
