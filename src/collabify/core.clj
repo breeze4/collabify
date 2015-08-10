@@ -13,20 +13,26 @@
 (def user-state (atom {}))
 
 (defroutes app-routes
-           ;(GET "/" [] (file-response "index.html" {:root "resources/public"}))
-           (GET "/" [] templates/index)
-           (GET "/playlists" [] templates/playlists)
-           (GET "/about" [] templates/about)
+           (GET "/" [] (file-response "index.html" {:root "public"}))
+           (GET "/loginSuccess" [] (file-response "loginSuccess.html" {:root "public"}))
+           (GET "/collabify" [] (file-response "collabify.html" {:root "public"}))
+           ;(GET "/" [] templates/index)
+           ;(GET "/playlists" [] templates/playlists)
+           ;(GET "/about" [] templates/about)
            (GET "/login" [] login)
-           (GET "/loginSuccess" [] login-success)
+           (GET "/loginCallback" [] login-success)
            (route/not-found "<h1>Page not found</h1>"))
 
-(defn user-state-middleware [f state]
-  (fn [request]
-    (f (assoc request :app-state state))))
+;(defn logging-middleware [handler]
+;  (fn [request]
+;    (do
+;      (prn request)
+;      (handler request)
+;      )))
 
 (def app
   (-> app-routes
+      ;(logging-middleware)
       (wrap-params)
       (wrap-json-response)
       (wrap-file "public")

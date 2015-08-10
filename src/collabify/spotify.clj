@@ -20,8 +20,8 @@
                             (string-to-base64-string
                               (str client-id ":" client-secret))))
 
-(def redirect-url "http://localhost:3000/loginSuccess")
-(def loggedin-url "http://localhost:3000/?")
+(def redirect-url "http://localhost:3000/loginCallback")
+(def loggedin-url "http://localhost:3000/loginSuccess?")
 (def state-mismatch-url "/state_mismatch")
 (def scopes "")
 
@@ -92,7 +92,7 @@
     stored-token))
 
 (defn- redirect-to-index [token]
-  (let [params (form-encode {:user_id (token :_id)
+  (let [params (form-encode {:user_id      (token :_id)
                              :access_token (token :access_token)
                              })
         url (str loggedin-url params)]
@@ -103,9 +103,11 @@
         code (query code-key)
         returned-state (query state-key)
         state-matches (= (:state @stored-state) returned-state)]
-      (if (not state-matches)
-        (redirect state-mismatch-url)
-        (redirect-to-index (request-token grant-authorization-code code)))))
+    (if (not state-matches)
+      (redirect state-mismatch-url)
+      (let [token (request-token grant-authorization-code code)
+            user-id (token :_id)]
+        (redirect-to-index token)))))
 
 (defn refresh-token
   "Spotify tokens expire after 1 hour. Server stores the refresh_token
