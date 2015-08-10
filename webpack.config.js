@@ -1,10 +1,12 @@
+var path = require('path');
+
 module.exports = {
-    context: __dirname + "/resources",
+    context: path.join(__dirname, "resources"),
     entry: "./js/main.jsx",
 
     output: {
         filename: "app.js",
-        path: __dirname + "/public/js"
+        path:path.join(__dirname, "public", "js")
     },
     module: {
         loaders: [

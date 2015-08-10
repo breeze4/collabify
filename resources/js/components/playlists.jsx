@@ -4,7 +4,7 @@ let Playlists = React.createClass({
 
     render() {
         return (
-            <div>Welcome to playlists
+            <div>Welcome to playlists or not
             </div>);
     }
 });
