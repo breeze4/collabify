@@ -2,7 +2,7 @@
   (:require
     [clj-http.client :as http]
     [environ.core :refer [env]]
-    [ring.util.response :refer [response redirect header]]
+    [ring.util.response :refer [response redirect header status]]
     [ring.middleware.cookies :refer [wrap-cookies]]
     [ring.util.codec :refer [form-encode]]
     [clojure.data.codec.base64 :as b64]
@@ -21,6 +21,7 @@
                               (str client-id ":" client-secret))))
 
 (def redirect-url "http://localhost:3000/loginSuccess")
+(def loggedin-url "http://localhost:3000/?")
 (def state-mismatch-url "/state_mismatch")
 (def scopes "")
 
@@ -90,6 +91,13 @@
         stored-token (handle-token-response token-response)]
     stored-token))
 
+(defn- redirect-to-index [token]
+  (let [params (form-encode {:user_id (token :_id)
+                             :access_token (token :access_token)
+                             })
+        url (str loggedin-url params)]
+    (redirect url)))
+
 (defn login-success [request]
   (let [query (:params request)
         code (query code-key)
@@ -97,7 +105,7 @@
         state-matches (= (:state @stored-state) returned-state)]
       (if (not state-matches)
         (redirect state-mismatch-url)
-        (response (request-token grant-authorization-code code)))))
+        (redirect-to-index (request-token grant-authorization-code code)))))
 
 (defn refresh-token
   "Spotify tokens expire after 1 hour. Server stores the refresh_token
