@@ -1,5 +1,6 @@
 var path = require('path');
 
+// webpack --progress --colors --watch
 module.exports = {
     context: path.join(__dirname, "resources"),
     entry: "./js/main.jsx",
@@ -16,5 +17,6 @@ module.exports = {
                 loaders: ["babel-loader"]
             }
         ]
-    }
+    },
+    debug: true
 }

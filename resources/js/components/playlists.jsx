@@ -1,6 +1,11 @@
 import React from 'react';
+import $ from 'jquery';
 
 let Playlists = React.createClass({
+
+    componentDidMount() {
+        $.get('')
+    },
 
     render() {
         return (

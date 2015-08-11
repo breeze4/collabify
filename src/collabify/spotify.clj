@@ -23,7 +23,7 @@
 (def redirect-url "http://localhost:3000/loginCallback")
 (def loggedin-url "http://localhost:3000/loginSuccess?")
 (def state-mismatch-url "/state_mismatch")
-(def scopes "")
+(def scopes "playlist-read-private playlist-read-collaborative")
 
 (def code-key "code")
 (def state-key "state")
@@ -113,4 +113,10 @@
   "Spotify tokens expire after 1 hour. Server stores the refresh_token
   and if the current user token has expired, it will request a new one"
   [])
+
+(slurp "resources/playlists.json")
+(def get-user-playlists-url "https://api.spotify.com/v1/users/%s/playlists")
+(def get-user-playlist-url "https://api.spotify.com/v1/users/%s/playlists/%s")
+(defn get-playlists [user-id access-token]
+  )
 ;;

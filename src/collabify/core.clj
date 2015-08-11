@@ -6,7 +6,7 @@
     [ring.middleware.params :refer [wrap-params]]
     [ring.middleware.json :refer [wrap-json-response]]
     [ring.util.response :refer [file-response redirect]]
-    [collabify.spotify :refer [login login-success]]
+    [collabify.spotify :refer [login login-success get-playlists]]
     [collabify.templates :as templates]
     ))
 
@@ -16,9 +16,8 @@
            (GET "/" [] (file-response "index.html" {:root "public"}))
            (GET "/loginSuccess" [] (file-response "loginSuccess.html" {:root "public"}))
            (GET "/collabify" [] (file-response "collabify.html" {:root "public"}))
-           ;(GET "/" [] templates/index)
-           ;(GET "/playlists" [] templates/playlists)
-           ;(GET "/about" [] templates/about)
+           (context "/playlist/:user-id" [user-id]
+                    (GET "/" [] get-playlists))
            (GET "/login" [] login)
            (GET "/loginCallback" [] login-success)
            (route/not-found "<h1>Page not found</h1>"))

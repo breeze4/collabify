@@ -1,0 +1,681 @@
+{
+  "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists?offset=0&limit=20",
+  "items" : [ {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sleazebreeze/playlist/50m5ODMKUFxkp8NTV6HLOt"
+    },
+    "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/50m5ODMKUFxkp8NTV6HLOt",
+    "id" : "50m5ODMKUFxkp8NTV6HLOt",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/0488052e20491e4971854cf7015fd7f1bc9115b3",
+      "width" : 640
+    } ],
+    "name" : "Wilderun – Sleep at the Edge of the Earth",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sleazebreeze"
+      },
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze",
+      "id" : "sleazebreeze",
+      "type" : "user",
+      "uri" : "spotify:user:sleazebreeze"
+    },
+    "public" : true,
+    "snapshot_id" : "sLrGBSYUNRfP+wLThaNekL62ZfaAcy8lCLrBYKdA6DdOsFcS5Z411u7vqIcJkbk0",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/50m5ODMKUFxkp8NTV6HLOt/tracks",
+      "total" : 9
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sleazebreeze:playlist:50m5ODMKUFxkp8NTV6HLOt"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sleazebreeze/playlist/4IBAgbwxZoolsLss7XAp2P"
+    },
+    "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/4IBAgbwxZoolsLss7XAp2P",
+    "id" : "4IBAgbwxZoolsLss7XAp2P",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/0c8e6884c8c169dd3594246a2af2d62c2fef2dcf65b607adc6ae77c20e1076317313ed427ac52c9989b82eafe49dc86bf4695dabe148d5f250ce80100aef39f5c9768d7533900e2ffcb3d8d400640a59",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/0c8e6884c8c169dd3594246a2af2d62c2fef2dcf65b607adc6ae77c20e1076317313ed427ac52c9989b82eafe49dc86bf4695dabe148d5f250ce80100aef39f5c9768d7533900e2ffcb3d8d400640a59",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/0c8e6884c8c169dd3594246a2af2d62c2fef2dcf65b607adc6ae77c20e1076317313ed427ac52c9989b82eafe49dc86bf4695dabe148d5f250ce80100aef39f5c9768d7533900e2ffcb3d8d400640a59",
+      "width" : 60
+    } ],
+    "name" : "Evergrey",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sleazebreeze"
+      },
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze",
+      "id" : "sleazebreeze",
+      "type" : "user",
+      "uri" : "spotify:user:sleazebreeze"
+    },
+    "public" : true,
+    "snapshot_id" : "ABvwNUlcWWPLJ5K+SQT/eCglfSVWDXtAvmFOLesXJfkWGCzYbOagr4faJzQYb2kq",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/4IBAgbwxZoolsLss7XAp2P/tracks",
+      "total" : 68
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sleazebreeze:playlist:4IBAgbwxZoolsLss7XAp2P"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sevenlionsofficial/playlist/1fhZAkaJ4xFiPmuW0vouQZ"
+    },
+    "href" : "https://api.spotify.com/v1/users/sevenlionsofficial/playlists/1fhZAkaJ4xFiPmuW0vouQZ",
+    "id" : "1fhZAkaJ4xFiPmuW0vouQZ",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/ebec26fd7509e75ff10ecc6f333890d6f048d6124b169a09a082573dd70a5bb2907388ca56f86e5119a7254da21811edaf2222355fda231ed5efd3617991be52a41f3b6dfab776d0d3044e2286e17c99",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/ebec26fd7509e75ff10ecc6f333890d6f048d6124b169a09a082573dd70a5bb2907388ca56f86e5119a7254da21811edaf2222355fda231ed5efd3617991be52a41f3b6dfab776d0d3044e2286e17c99",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/ebec26fd7509e75ff10ecc6f333890d6f048d6124b169a09a082573dd70a5bb2907388ca56f86e5119a7254da21811edaf2222355fda231ed5efd3617991be52a41f3b6dfab776d0d3044e2286e17c99",
+      "width" : 60
+    } ],
+    "name" : "Seven Lions Discography",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sevenlionsofficial"
+      },
+      "href" : "https://api.spotify.com/v1/users/sevenlionsofficial",
+      "id" : "sevenlionsofficial",
+      "type" : "user",
+      "uri" : "spotify:user:sevenlionsofficial"
+    },
+    "public" : false,
+    "snapshot_id" : "gx+CCo4SD8x9ITl58OklaBvn/esV8AvRww6L0j9+usr4a3ty67NdfzU1ImgrCjtI",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sevenlionsofficial/playlists/1fhZAkaJ4xFiPmuW0vouQZ/tracks",
+      "total" : 27
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sevenlionsofficial:playlist:1fhZAkaJ4xFiPmuW0vouQZ"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sleazebreeze/playlist/2TPLuFOc3JLCcr4tEjvNsj"
+    },
+    "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/2TPLuFOc3JLCcr4tEjvNsj",
+    "id" : "2TPLuFOc3JLCcr4tEjvNsj",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/14ee7516d0929d1800dc49664606bba369bcf717",
+      "width" : 640
+    } ],
+    "name" : "Erra",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sleazebreeze"
+      },
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze",
+      "id" : "sleazebreeze",
+      "type" : "user",
+      "uri" : "spotify:user:sleazebreeze"
+    },
+    "public" : true,
+    "snapshot_id" : "2jEm0tr1z6rTV8FXCQmXd19r91pKDSS11knrUGD8Zvzw2O7irX159hoMJKif2OWJ",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/2TPLuFOc3JLCcr4tEjvNsj/tracks",
+      "total" : 27
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sleazebreeze:playlist:2TPLuFOc3JLCcr4tEjvNsj"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sleazebreeze/playlist/6iRcvgVic34bSyOkD5TSTQ"
+    },
+    "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/6iRcvgVic34bSyOkD5TSTQ",
+    "id" : "6iRcvgVic34bSyOkD5TSTQ",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/3a36ddbde7d9944e74d00b11f368088a3b331180",
+      "width" : 640
+    } ],
+    "name" : "Woods Of Ypres – Woods 5: Grey Skies & Electric Light",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sleazebreeze"
+      },
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze",
+      "id" : "sleazebreeze",
+      "type" : "user",
+      "uri" : "spotify:user:sleazebreeze"
+    },
+    "public" : true,
+    "snapshot_id" : "r4G0TaPGIiTDYjZ0HrqWoGASOEJOZXadqaPcvEOS1hZ36o6ZjGVhh4b48Gx+K74c",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/6iRcvgVic34bSyOkD5TSTQ/tracks",
+      "total" : 11
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sleazebreeze:playlist:6iRcvgVic34bSyOkD5TSTQ"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/spotifydiscover/playlist/3E6AESqEy2u0yGGpGQLIb8"
+    },
+    "href" : "https://api.spotify.com/v1/users/spotifydiscover/playlists/3E6AESqEy2u0yGGpGQLIb8",
+    "id" : "3E6AESqEy2u0yGGpGQLIb8",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/254bf0bab8573ff2a617b56089f4d4c656c38e91",
+      "width" : 300
+    } ],
+    "name" : "Discover Weekly",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/spotifydiscover"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotifydiscover",
+      "id" : "spotifydiscover",
+      "type" : "user",
+      "uri" : "spotify:user:spotifydiscover"
+    },
+    "public" : false,
+    "snapshot_id" : "Xsh3VGuuOfB9zFqU7kSQdNLsHDmUHMJyRzY34kTyXucDN/cA+1xNSgD13t84SVEB",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/spotifydiscover/playlists/3E6AESqEy2u0yGGpGQLIb8/tracks",
+      "total" : 30
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:spotifydiscover:playlist:3E6AESqEy2u0yGGpGQLIb8"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sleazebreeze/playlist/5fBNcs3b8VNF6BlEpGInWQ"
+    },
+    "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/5fBNcs3b8VNF6BlEpGInWQ",
+    "id" : "5fBNcs3b8VNF6BlEpGInWQ",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/0617de5b1fe4ca6d66239b7bbae0d430d5a6fbf9",
+      "width" : 640
+    } ],
+    "name" : "Air Supply – Ultimate Air Supply",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sleazebreeze"
+      },
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze",
+      "id" : "sleazebreeze",
+      "type" : "user",
+      "uri" : "spotify:user:sleazebreeze"
+    },
+    "public" : true,
+    "snapshot_id" : "Q5RFp6Es1A+FIEWDHWMwYDe1joU6hKPdyNW2HUilPTZ9ldXsKs5qoofaJzQYb2kq",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/5fBNcs3b8VNF6BlEpGInWQ/tracks",
+      "total" : 18
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sleazebreeze:playlist:5fBNcs3b8VNF6BlEpGInWQ"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sleazebreeze/playlist/3a9NkJCTOZfkmGPKYVX6Sq"
+    },
+    "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/3a9NkJCTOZfkmGPKYVX6Sq",
+    "id" : "3a9NkJCTOZfkmGPKYVX6Sq",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/00274ae9e9bf14253bd160213e77af341df597ebda576047050580733aa43f6e44e4cdc4e978e803707e66afce64b4ba98b499fb9bb15383bceee1fa303606adba5b0a881379ecb2298741a61e7b082c",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/00274ae9e9bf14253bd160213e77af341df597ebda576047050580733aa43f6e44e4cdc4e978e803707e66afce64b4ba98b499fb9bb15383bceee1fa303606adba5b0a881379ecb2298741a61e7b082c",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/00274ae9e9bf14253bd160213e77af341df597ebda576047050580733aa43f6e44e4cdc4e978e803707e66afce64b4ba98b499fb9bb15383bceee1fa303606adba5b0a881379ecb2298741a61e7b082c",
+      "width" : 60
+    } ],
+    "name" : "Slipknot",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sleazebreeze"
+      },
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze",
+      "id" : "sleazebreeze",
+      "type" : "user",
+      "uri" : "spotify:user:sleazebreeze"
+    },
+    "public" : true,
+    "snapshot_id" : "o5cB6A6jFFGbeuvVo4ennm+xXmxDH9qvvmEQDqoAJ6nj2cl6bifZpsboqe3BT+P8",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/3a9NkJCTOZfkmGPKYVX6Sq/tracks",
+      "total" : 78
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sleazebreeze:playlist:3a9NkJCTOZfkmGPKYVX6Sq"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/spotify/playlist/2ujjMpFriZ2nayLmrD1Jgl"
+    },
+    "href" : "https://api.spotify.com/v1/users/spotify/playlists/2ujjMpFriZ2nayLmrD1Jgl",
+    "id" : "2ujjMpFriZ2nayLmrD1Jgl",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/6e4deac05605100260556b6001cd847d5a0363d3",
+      "width" : 300
+    } ],
+    "name" : "Deep Focus",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/spotify"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify",
+      "id" : "spotify",
+      "type" : "user",
+      "uri" : "spotify:user:spotify"
+    },
+    "public" : false,
+    "snapshot_id" : "c2NfRtRJNJLf8i3us6FKlO9x8UVbWdAHmBRlhFgACeD2HlKlK0w0l9dRoTkmGRwx",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/2ujjMpFriZ2nayLmrD1Jgl/tracks",
+      "total" : 114
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:spotify:playlist:2ujjMpFriZ2nayLmrD1Jgl"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/spotify/playlist/1R2iL5hYKBrKy32T58CUUI"
+    },
+    "href" : "https://api.spotify.com/v1/users/spotify/playlists/1R2iL5hYKBrKy32T58CUUI",
+    "id" : "1R2iL5hYKBrKy32T58CUUI",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/c3a7301751c8f4145703ca1592af9f6e931c4925",
+      "width" : 300
+    } ],
+    "name" : "Productive Morning",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/spotify"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify",
+      "id" : "spotify",
+      "type" : "user",
+      "uri" : "spotify:user:spotify"
+    },
+    "public" : false,
+    "snapshot_id" : "m+OXBhPqiVFPCgnkIAgslPQmeNrZ67RuQxGQe8Qm6MpM5oFhiw48FmyBs7rRS9th",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/1R2iL5hYKBrKy32T58CUUI/tracks",
+      "total" : 22
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:spotify:playlist:1R2iL5hYKBrKy32T58CUUI"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sleazebreeze/playlist/3HMvEIytUxFrabsBGslmmk"
+    },
+    "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/3HMvEIytUxFrabsBGslmmk",
+    "id" : "3HMvEIytUxFrabsBGslmmk",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/91464694c2668520504bd2a6994afd3b6253664482f3e3889b0d3fabf1a486cfcc0371aafbb75e174dfe1da7741566ffbf35daa33ace8412710c1f411721b52796ac5bfcb144c56a06f81debc61de9a9",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/91464694c2668520504bd2a6994afd3b6253664482f3e3889b0d3fabf1a486cfcc0371aafbb75e174dfe1da7741566ffbf35daa33ace8412710c1f411721b52796ac5bfcb144c56a06f81debc61de9a9",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/91464694c2668520504bd2a6994afd3b6253664482f3e3889b0d3fabf1a486cfcc0371aafbb75e174dfe1da7741566ffbf35daa33ace8412710c1f411721b52796ac5bfcb144c56a06f81debc61de9a9",
+      "width" : 60
+    } ],
+    "name" : "Head North",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sleazebreeze"
+      },
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze",
+      "id" : "sleazebreeze",
+      "type" : "user",
+      "uri" : "spotify:user:sleazebreeze"
+    },
+    "public" : true,
+    "snapshot_id" : "C9c8t0/DJv/Oc4BC8/aBYekad+w2+rv2hJ4Sh54O3oxBVceJB5+QqxoMJKif2OWJ",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/3HMvEIytUxFrabsBGslmmk/tracks",
+      "total" : 17
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sleazebreeze:playlist:3HMvEIytUxFrabsBGslmmk"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sleazebreeze/playlist/3mh8mDt1yllH1sqf28L9hk"
+    },
+    "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/3mh8mDt1yllH1sqf28L9hk",
+    "id" : "3mh8mDt1yllH1sqf28L9hk",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/909d8c034da5251ac90a57853a608492d6c18bb4",
+      "width" : 640
+    } ],
+    "name" : "Dream Theater – Dream Theater",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sleazebreeze"
+      },
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze",
+      "id" : "sleazebreeze",
+      "type" : "user",
+      "uri" : "spotify:user:sleazebreeze"
+    },
+    "public" : true,
+    "snapshot_id" : "TQtXvalvl5QglEFTRThmOfss740RLspb9qT7KJQWooYw3BZ5S0S/tOQtqAb9YiC1",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/3mh8mDt1yllH1sqf28L9hk/tracks",
+      "total" : 9
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sleazebreeze:playlist:3mh8mDt1yllH1sqf28L9hk"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/1118412559/playlist/41Uf61JyNjhkETfVqI3Jjm"
+    },
+    "href" : "https://api.spotify.com/v1/users/1118412559/playlists/41Uf61JyNjhkETfVqI3Jjm",
+    "id" : "41Uf61JyNjhkETfVqI3Jjm",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/984f827d8e709da23ae0813896bba7055753c4f3f9b8941787730982119ea1d4c1e72d5c8f1f1e1d373d95e8e3f4c64f80e8e3a372f0add6163d219997e4791c42ffcc0bf9ff2b7ed0535d080d30b797",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/984f827d8e709da23ae0813896bba7055753c4f3f9b8941787730982119ea1d4c1e72d5c8f1f1e1d373d95e8e3f4c64f80e8e3a372f0add6163d219997e4791c42ffcc0bf9ff2b7ed0535d080d30b797",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/984f827d8e709da23ae0813896bba7055753c4f3f9b8941787730982119ea1d4c1e72d5c8f1f1e1d373d95e8e3f4c64f80e8e3a372f0add6163d219997e4791c42ffcc0bf9ff2b7ed0535d080d30b797",
+      "width" : 60
+    } ],
+    "name" : "Liquid Drum & Bass (5500+ Tracks)",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/1118412559"
+      },
+      "href" : "https://api.spotify.com/v1/users/1118412559",
+      "id" : "1118412559",
+      "type" : "user",
+      "uri" : "spotify:user:1118412559"
+    },
+    "public" : false,
+    "snapshot_id" : "nXzF5FOkaHu2h+doZp6J3CIjyEA0epvdDX9YTPhPgZFdcTGSjHic7H/fqxQCbcOm",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/1118412559/playlists/41Uf61JyNjhkETfVqI3Jjm/tracks",
+      "total" : 5839
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:1118412559:playlist:41Uf61JyNjhkETfVqI3Jjm"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sleazebreeze/playlist/1IAyJTNcEF80X7qgTdwL9M"
+    },
+    "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/1IAyJTNcEF80X7qgTdwL9M",
+    "id" : "1IAyJTNcEF80X7qgTdwL9M",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/786d438907b80cd3329dc6262765aa25fe5169e0",
+      "width" : 640
+    } ],
+    "name" : "Bomba Estéreo – Amanecer",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sleazebreeze"
+      },
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze",
+      "id" : "sleazebreeze",
+      "type" : "user",
+      "uri" : "spotify:user:sleazebreeze"
+    },
+    "public" : true,
+    "snapshot_id" : "IJnQaqSQXiGsYhwbrVkQAPQlcGRfyLVFY2g/KNj5CVUGZdLkYzjALrsjp7qYrBDt",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/1IAyJTNcEF80X7qgTdwL9M/tracks",
+      "total" : 11
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sleazebreeze:playlist:1IAyJTNcEF80X7qgTdwL9M"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sleazebreeze/playlist/6N8AriThWy55LtJhqwzwmm"
+    },
+    "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/6N8AriThWy55LtJhqwzwmm",
+    "id" : "6N8AriThWy55LtJhqwzwmm",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/2bd6f14f6c8d14742a0669f5d73f02948e37eb7802f5cb2d0bde0543e57caf27adb28b5d220edb1b7be90f6e1e230974c10080174f9e0d1920866f3c9631b23978aa6f90cefc3b5c63cf632b13f24ce1",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/2bd6f14f6c8d14742a0669f5d73f02948e37eb7802f5cb2d0bde0543e57caf27adb28b5d220edb1b7be90f6e1e230974c10080174f9e0d1920866f3c9631b23978aa6f90cefc3b5c63cf632b13f24ce1",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/2bd6f14f6c8d14742a0669f5d73f02948e37eb7802f5cb2d0bde0543e57caf27adb28b5d220edb1b7be90f6e1e230974c10080174f9e0d1920866f3c9631b23978aa6f90cefc3b5c63cf632b13f24ce1",
+      "width" : 60
+    } ],
+    "name" : "The Offspring",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sleazebreeze"
+      },
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze",
+      "id" : "sleazebreeze",
+      "type" : "user",
+      "uri" : "spotify:user:sleazebreeze"
+    },
+    "public" : true,
+    "snapshot_id" : "jWKvniKXiNnxD7V5kAtwWzwZZhniON3UYAVrs22SqKXR7vbglKMTeTgdXUO1rgIv",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/6N8AriThWy55LtJhqwzwmm/tracks",
+      "total" : 91
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sleazebreeze:playlist:6N8AriThWy55LtJhqwzwmm"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sleazebreeze/playlist/2tIDjn0ebNmYzvpCCxrIPD"
+    },
+    "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/2tIDjn0ebNmYzvpCCxrIPD",
+    "id" : "2tIDjn0ebNmYzvpCCxrIPD",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/644a9255d913e149ff7fa76ba58e0380aa6101f2b2f036e423f85b8a89fcf94918583298d89a464b8416b0b6a94775878fe980b884f6593b4534b4c1522d59a1642504d2a7d50ab105814ec215c410ed",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/644a9255d913e149ff7fa76ba58e0380aa6101f2b2f036e423f85b8a89fcf94918583298d89a464b8416b0b6a94775878fe980b884f6593b4534b4c1522d59a1642504d2a7d50ab105814ec215c410ed",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/644a9255d913e149ff7fa76ba58e0380aa6101f2b2f036e423f85b8a89fcf94918583298d89a464b8416b0b6a94775878fe980b884f6593b4534b4c1522d59a1642504d2a7d50ab105814ec215c410ed",
+      "width" : 60
+    } ],
+    "name" : "Jazz",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sleazebreeze"
+      },
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze",
+      "id" : "sleazebreeze",
+      "type" : "user",
+      "uri" : "spotify:user:sleazebreeze"
+    },
+    "public" : true,
+    "snapshot_id" : "pEOT6yr+1vvU6YWN1OG5VemWR8UJahGNE+Ylk/J5O1Du0Uxo4CrMq/GVpEqLvI9L",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/2tIDjn0ebNmYzvpCCxrIPD/tracks",
+      "total" : 7
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sleazebreeze:playlist:2tIDjn0ebNmYzvpCCxrIPD"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sleazebreeze/playlist/4ZfxmPsvOIXGiFwaNQjUOO"
+    },
+    "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/4ZfxmPsvOIXGiFwaNQjUOO",
+    "id" : "4ZfxmPsvOIXGiFwaNQjUOO",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/6744d0545fd7c9f1f303b208a7b64df10c59052e92f1534089ffa4f840fce017e58ee35664d0870740d01c9ef73ebfe13e52d84b4aaeaea11fbda757bbcebc361e954e182617c5cdd3e1382a0eff9073",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/6744d0545fd7c9f1f303b208a7b64df10c59052e92f1534089ffa4f840fce017e58ee35664d0870740d01c9ef73ebfe13e52d84b4aaeaea11fbda757bbcebc361e954e182617c5cdd3e1382a0eff9073",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/6744d0545fd7c9f1f303b208a7b64df10c59052e92f1534089ffa4f840fce017e58ee35664d0870740d01c9ef73ebfe13e52d84b4aaeaea11fbda757bbcebc361e954e182617c5cdd3e1382a0eff9073",
+      "width" : 60
+    } ],
+    "name" : "dnb",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sleazebreeze"
+      },
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze",
+      "id" : "sleazebreeze",
+      "type" : "user",
+      "uri" : "spotify:user:sleazebreeze"
+    },
+    "public" : true,
+    "snapshot_id" : "f792ftq9TWfF+sXqoHPAY2scMWsxhpaRIqF72AzIN47vuHmMkbSYQv3CCd6KfHfu",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/4ZfxmPsvOIXGiFwaNQjUOO/tracks",
+      "total" : 207
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sleazebreeze:playlist:4ZfxmPsvOIXGiFwaNQjUOO"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sleazebreeze/playlist/2qnce62Vqtnhd7eRvQwWMO"
+    },
+    "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/2qnce62Vqtnhd7eRvQwWMO",
+    "id" : "2qnce62Vqtnhd7eRvQwWMO",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/70245fa1e27d53dbb8cdc4450b2e91e3497f1601f4a96ee3cfd215f94a52f822113e9bae3d55f2320b0a1db5d519eccbc6772ac99106dbe9baef44693bba3b1996cfb6acdfc390acc1fa3b71414959e7",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/70245fa1e27d53dbb8cdc4450b2e91e3497f1601f4a96ee3cfd215f94a52f822113e9bae3d55f2320b0a1db5d519eccbc6772ac99106dbe9baef44693bba3b1996cfb6acdfc390acc1fa3b71414959e7",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/70245fa1e27d53dbb8cdc4450b2e91e3497f1601f4a96ee3cfd215f94a52f822113e9bae3d55f2320b0a1db5d519eccbc6772ac99106dbe9baef44693bba3b1996cfb6acdfc390acc1fa3b71414959e7",
+      "width" : 60
+    } ],
+    "name" : "Farewell To Tarwathie",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sleazebreeze"
+      },
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze",
+      "id" : "sleazebreeze",
+      "type" : "user",
+      "uri" : "spotify:user:sleazebreeze"
+    },
+    "public" : true,
+    "snapshot_id" : "ZwrAHPCsilcQx4mfiakKG8h5Bzx2y4KsmUEtn2gcT3Wxo1BH78nNpFlacoIPb+4K",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/2qnce62Vqtnhd7eRvQwWMO/tracks",
+      "total" : 7
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sleazebreeze:playlist:2qnce62Vqtnhd7eRvQwWMO"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sleazebreeze/playlist/7mYYkHIghvz0apzg5VhhPy"
+    },
+    "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/7mYYkHIghvz0apzg5VhhPy",
+    "id" : "7mYYkHIghvz0apzg5VhhPy",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/8c0357501208c989bed6f87dff0ed607937dc17c",
+      "width" : 640
+    } ],
+    "name" : "My Chemical Romance – Three Cheers For Sweet Revenge",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sleazebreeze"
+      },
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze",
+      "id" : "sleazebreeze",
+      "type" : "user",
+      "uri" : "spotify:user:sleazebreeze"
+    },
+    "public" : true,
+    "snapshot_id" : "lJHqRdUk5wgB23nx4CtWaAQ1+K3blEMPsNluj4oP4qkvHDZFdJR57ydb9JG8Syv4",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/7mYYkHIghvz0apzg5VhhPy/tracks",
+      "total" : 14
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sleazebreeze:playlist:7mYYkHIghvz0apzg5VhhPy"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/sleazebreeze/playlist/2BzRJiNNWhDGeoVU0kuojK"
+    },
+    "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/2BzRJiNNWhDGeoVU0kuojK",
+    "id" : "2BzRJiNNWhDGeoVU0kuojK",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/16c7d30ee612d6480bdd1d57e7726f5de4e336a9",
+      "width" : 640
+    } ],
+    "name" : "Kamelot – Haven",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sleazebreeze"
+      },
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze",
+      "id" : "sleazebreeze",
+      "type" : "user",
+      "uri" : "spotify:user:sleazebreeze"
+    },
+    "public" : true,
+    "snapshot_id" : "nVxIozX/y4ZAf4RZ0H7ysSYe9SZu1v71d12uX8kjxNYagCqDWhsMWP6F72VVZAGl",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/sleazebreeze/playlists/2BzRJiNNWhDGeoVU0kuojK/tracks",
+      "total" : 13
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:sleazebreeze:playlist:2BzRJiNNWhDGeoVU0kuojK"
+  } ],
+  "limit" : 20,
+  "next" : "https://api.spotify.com/v1/users/sleazebreeze/playlists?offset=20&limit=20",
+  "offset" : 0,
+  "previous" : null,
+  "total" : 316
+}

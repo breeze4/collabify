@@ -4,6 +4,8 @@ import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
 
 import PlaylistsHandler from './components/playlists.jsx';
 
+// from http://stackoverflow.com/questions/27864720/react-router-pass-props-to-handler-component
+// to pass props to the handler, might not even be necessary, leaving it in for now
 var wrapComponent = function (Component, props) {
     return React.createClass({
         render: function () {
