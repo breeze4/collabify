@@ -17,21 +17,21 @@
            (GET "/loginSuccess" [] (file-response "loginSuccess.html" {:root "public"}))
            (GET "/collabify" [] (file-response "collabify.html" {:root "public"}))
            (context "/playlist/:user-id" [user-id]
-                    (GET "/" [] get-playlists))
+                    (GET "/" [user-id] get-playlists))
            (GET "/login" [] login)
            (GET "/loginCallback" [] login-success)
            (route/not-found "<h1>Page not found</h1>"))
 
-;(defn logging-middleware [handler]
-;  (fn [request]
-;    (do
-;      (prn request)
-;      (handler request)
-;      )))
+(defn logging-middleware [handler]
+  (fn [request]
+    (do
+      (prn request)
+      (handler request)
+      )))
 
 (def app
   (-> app-routes
-      ;(logging-middleware)
+      (logging-middleware)
       (wrap-params)
       (wrap-json-response)
       (wrap-file "public")

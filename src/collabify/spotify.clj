@@ -114,9 +114,11 @@
   and if the current user token has expired, it will request a new one"
   [])
 
-(slurp "resources/playlists.json")
+
 (def get-user-playlists-url "https://api.spotify.com/v1/users/%s/playlists")
 (def get-user-playlist-url "https://api.spotify.com/v1/users/%s/playlists/%s")
-(defn get-playlists [user-id access-token]
-  )
+(defn get-playlists [user-id]
+  (let [data (slurp "resources/playlists.json")
+        body (json/read-str data :key-fn keyword)]
+    (response body)))
 ;;
